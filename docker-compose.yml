@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  scraper-bot:
+    build: .
+    container_name: food_scraper_bot
+    command: python scheduler/cron_job.py
+    env_file:
+      - .env
+    volumes:
+      - ./food_data.db:/app/food_data.db
+      - ./logs:/app/logs
+    restart: always
+
+  analytics-dashboard:
+    build: .
+    container_name: food_analytics_dashboard
+    command: streamlit run dashboard/app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./food_data.db:/app/food_data.db
+    depends_on:
+      - scraper-bot
+    restart: always

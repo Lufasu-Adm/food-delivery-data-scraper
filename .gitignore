@@ -1,0 +1,13 @@
+# Environments
+venv/
+env/
+.env
+
+# Database & Logs
+food_data.db
+logs/
+
+# Python Cache
+__pycache__/
+*.pyc
+.pytest_cache/
