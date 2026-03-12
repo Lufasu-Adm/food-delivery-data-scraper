@@ -40,14 +40,14 @@ Capabilities:
 Interactive Streamlit dashboard displaying key metrics from scraped food delivery data.
 
 ```
-(Insert Dashboard Screenshot Here)
+https://github.com/Lufasu-Adm/food-delivery-data-scraper/blob/main/public/Food_Delivery_Data_Analytics.png
 ```
 
 ## 2. Telegram Bot Monitoring
 The integrated Telegram bot sends execution logs and business insights directly to your Telegram account.
 
 ```
-(Insert Telegram Bot Screenshot Here)
+https://github.com/Lufasu-Adm/food-delivery-data-scraper/blob/main/public/TELE.jpeg
 ```
 
 ---
@@ -222,3 +222,4 @@ Developed by **Lufasu**
 
 GitHub:  
 https://github.com/Lufasu-Adm
+
